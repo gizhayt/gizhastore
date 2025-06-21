@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Layanan;
+use App\Models\PaketRevisi;
 
 class ClientDashboardController extends Controller
 {
@@ -12,7 +13,13 @@ class ClientDashboardController extends Controller
      */
     public function index()
     {
-        return view('client.dashboard');
+        // Mengambil data paket revisi yang aktif untuk services section
+        $paketRevisi = PaketRevisi::where('aktif', true)->get();
+        
+        // Mengambil data layanan untuk projects section
+        $layanan = Layanan::all();
+        
+        return view('client.dashboard', compact('paketRevisi', 'layanan'));
     }
 
     /**

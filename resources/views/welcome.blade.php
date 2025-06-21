@@ -173,6 +173,125 @@
         .service-card p {
             font-size: 1rem;
             font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .service-price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffdd57;
+        }
+
+        /* Projects Section Styling */
+        .projects-section {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .projects-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: #f8f8f8;
+            border-radius: 15px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project-price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #6a41e4;
+        }
+
+        /* Social Media Footer Styling */
+        .social-footer {
+            background-color: #6a41e4;
+            padding: 30px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-icon i {
+            font-size: 30px;
+            background-color: #f8f8f8;
+            border-radius: 50%;
+            padding: 10px;
+            color: #333;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icon i:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            background-color: #ffdd57;
+            color: #6a41e4;
+        }
+
+        .social-footer p {
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffdd57;
+            margin: 0;
+        }
+
+        /* No data message styling */
+        .no-data {
+            color: #ddd;
+            font-style: italic;
+            font-size: 1.1rem;
+            padding: 40px;
+        }
+
+        .no-data-projects {
+            color: #666;
+            font-style: italic;
+            font-size: 1.1rem;
+            padding: 40px;
         }
 
         /* Responsive Styles */
@@ -193,6 +312,10 @@
                 margin-top: 10px;
             }
             .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .projects-container {
                 flex-direction: column;
                 align-items: center;
             }
@@ -217,102 +340,6 @@
                 margin-top: 5px;
             }
         }
-        /* Projects Section Styling */
-.projects-section {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-.projects-title {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.project-card {
-    background-color: #f8f8f8;
-    border-radius: 15px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.project-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Responsive Styles for Projects Section */
-@media (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* Social Media Footer Styling */
-.social-footer {
-    background-color: #6a41e4;
-    padding: 30px 0;
-    text-align: center;
-    color: #fff;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.social-icon i {
-    font-size: 30px;
-    background-color: #f8f8f8;
-    border-radius: 50%;
-    padding: 10px;
-    color: #333;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-.social-icon i:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    background-color: #ffdd57;
-    color: #6a41e4;
-}
-
-.social-footer p {
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffdd57;
-    margin: 0;
-}
-
     </style>
 </head>
 <body>
@@ -339,10 +366,16 @@
     <!-- Footer -->
     <footer>
         <div class="service-tags">
-            <span>Streaming Pack</span>
-            <span>Chibi Art</span>
-            <span>Vector Art</span>
-            <span>Logo Design</span>
+            @if($layanan->count() > 0)
+                @foreach($layanan->take(4) as $service)
+                    <span>{{ $service->nama }}</span>
+                @endforeach
+            @else
+                <span>Streaming Pack</span>
+                <span>Chibi Art</span>
+                <span>Vector Art</span>
+                <span>Logo Design</span>
+            @endif
         </div>
     </footer>
 
@@ -350,57 +383,82 @@
     <section class="services-section">
         <h2 class="services-title">My Services</h2>
         <div class="services-container">
-            <div class="service-card">
-                <div class="service-header">Basic Design</div>
-                <p>Get 1 Revision/Image Harga Tetap</p>
-            </div>
-            <div class="service-card">
-                <div class="service-header">Standard Design</div>
-                <p>Get 3 Revisions/Image dan Blue Harga 35K</p>
-            </div>
-            <div class="service-card">
-                <div class="service-header">Premium Design</div>
-                <p>Get 5 Revisions/Image dan Mockup Harga 75K</p>
-            </div>
+            @if($paketRevisi->count() > 0)
+                @foreach($paketRevisi as $paket)
+                    <div class="service-card">
+                        <div class="service-header">{{ $paket->nama }}</div>
+                        <p>{{ $paket->deskripsi ?? 'Jumlah Revisi: ' . $paket->jumlah_revisi }}</p>
+                        <div class="service-price">Rp {{ number_format($paket->harga, 0, ',', '.') }}</div>
+                    </div>
+                @endforeach
+            @else
+                <div class="service-card">
+                    <div class="service-header">Basic Design</div>
+                    <p>Get 1 Revision/Image Harga Tetap</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">Standard Design</div>
+                    <p>Get 3 Revisions/Image dan Blue Harga 35K</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-header">Premium Design</div>
+                    <p>Get 5 Revisions/Image dan Mockup Harga 75K</p>
+                </div>
+            @endif
         </div>
     </section>
 
     <!-- Projects Section -->
     <section class="projects-section">
-    <h2 class="projects-title">My Latest Projects</h2>
-    <div class="projects-container">
-        <div class="project-card">
-            <img src="images/streaming-pack.png" alt="Streaming Pack">
-            <h3 class="project-title">Streaming Pack</h3>
+        <h2 class="projects-title">My Latest Projects</h2>
+        <div class="projects-container">
+            @if($layanan->count() > 0)
+                @foreach($layanan as $project)
+                    <div class="project-card">
+                        @if($project->gambar)
+                            <img src="{{ asset('storage/' . $project->gambar) }}" alt="{{ $project->nama }}">
+                        @else
+                            <img src="{{ asset('images/placeholder.jpg') }}" alt="{{ $project->nama }}">
+                        @endif
+                        <h3 class="project-title">{{ $project->nama }}</h3>
+                        <div class="project-price">Rp {{ number_format($project->harga, 0, ',', '.') }}</div>
+                    </div>
+                @endforeach
+            @else
+                <div class="project-card">
+                    <img src="{{ asset('images/streaming-pack.png') }}" alt="Streaming Pack">
+                    <h3 class="project-title">Streaming Pack</h3>
+                </div>
+                <div class="project-card">
+                    <img src="{{ asset('images/chibi-art.png') }}" alt="Chibi Art Illustration">
+                    <h3 class="project-title">Chibi Art Illustration</h3>
+                </div>
+                <div class="project-card">
+                    <img src="{{ asset('images/vector-art.png') }}" alt="Vector Art Illustration">
+                    <h3 class="project-title">Vector Art Illustration</h3>
+                </div>
+                <div class="project-card">
+                    <img src="{{ asset('images/logo-design.png') }}" alt="Logo Design">
+                    <h3 class="project-title">Logo Design</h3>
+                </div>
+            @endif
         </div>
-        <div class="project-card">
-            <img src="images/chibi-art.png" alt="Chibi Art Illustration">
-            <h3 class="project-title">Chibi Art Illustration</h3>
+    </section>
+
+    <!-- Social Media Footer -->
+    <footer class="social-footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/gipstore.catalogue/" class="social-icon">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://wa.me/+6285746178059" class="social-icon">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://discord.gg/ZZatawHNWy" class="social-icon">
+                <i class="bi bi-discord"></i>
+            </a>
         </div>
-        <div class="project-card">
-            <img src="images/vector-art.png" alt="Vector Art Illustration">
-            <h3 class="project-title">Vector Art Illustration</h3>
-        </div>
-        <div class="project-card">
-            <img src="images/logo-design.png" alt="Logo Design">
-            <h3 class="project-title">Logo Design</h3>
-        </div>
-    </div>
-</section>
-<!-- Social Media Footer -->
-<footer class="social-footer">
-    <div class="social-icons">
-        <a href="https://www.instagram.com/gipstore.catalogue/" class="social-icon">
-            <i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://wa.me/+6285746178059" class="social-icon">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-        <a href="https://discord.gg/ZZatawHNWy" class="social-icon">
-            <i class="bi bi-discord"></i>
-        </a>
-    </div>
-    <p>&copy; Copyright by | gipstore 2024</p>
-</footer>
+        <p>&copy; Copyright by | gipstore 2024</p>
+    </footer>
 </body>
 </html>

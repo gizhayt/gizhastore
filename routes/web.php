@@ -8,12 +8,13 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\Client\ChatController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\WelcomeController;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
+
 
 
 // Manual logout route
